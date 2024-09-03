@@ -1,14 +1,20 @@
-import { Button } from "./components/ui/button"
-
+import {
+  Route,
+  Routes,
+  Navigate,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
+import { DefaultLayout } from "./components/layout/default-layout";
 
 function App() {
-
   return (
-    <div className="text-3xl text-red-500" >
-      Hello There
-      <Button>Click</Button>
-    </div>
-  )
+    <Routes>
+      <Route element={<DefaultLayout />} >
+        <Route path="/" element={<div>Home</div>} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
