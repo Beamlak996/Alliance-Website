@@ -129,3 +129,22 @@ export const programs = [
     ],
   },
 ];
+
+export const faqs = [
+  {
+    question: "What programs does Alliance College offer?",
+    answer:
+      "Alliance College offers a variety of undergraduate and graduate programs in fields such as Business, Technology, and Health Sciences.",
+  },
+  {
+    question: "How can I apply to Alliance College?",
+    answer:
+      "You can apply online through our official website. Visit the admissions page for more details.",
+  },
+  {
+    question: "What are the tuition fees at Alliance College?",
+    answer:
+      "Tuition fees vary depending on the program. Please refer to the tuition and fees section on our website for detailed information.",
+  },
+  // Add more FAQs as needed
+];

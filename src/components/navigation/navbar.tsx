@@ -45,6 +45,7 @@ export const Navbar = () => {
             variant="expandIcon"
             Icon={ArrowRightIcon}
             iconPlacement="right"
+            className="bg-rose-500 hover:bg-rose-500"
           >
             Online Course
           </Button>

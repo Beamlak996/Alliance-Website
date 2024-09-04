@@ -1,5 +1,6 @@
 import { CoursesComponent } from "@/components/general/courses";
 import { Cta } from "@/components/general/cta";
+import { FAQ } from "@/components/general/faq";
 import { Hero } from "@/components/general/hero";
 import { ProgramsSection } from "@/components/general/program-section";
 import { Stats } from "@/components/general/stats";
@@ -14,6 +15,7 @@ export const HomePage = () => {
       <ProgramsSection />
       <Testimonials />
       <Cta />
+      <FAQ />
     </div>
   );
 };
