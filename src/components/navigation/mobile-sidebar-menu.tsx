@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp, Menu } from "lucide-react";
+import { ArrowRightIcon, ChevronDown, ChevronUp, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Link } from "react-router-dom";
 import {
@@ -8,6 +8,7 @@ import {
   admissions,
   lifeInAlliance,
 } from "@/lib/data";
+import { Button } from "../ui/button";
 
 const menuItems = [
   { title: "Home", href: "/" },
@@ -75,6 +76,17 @@ export const MobileSidebarMenu = () => {
             </div>
           ))}
         </nav>
+        <div className="flex flex-col w-full items-center  my-2 gap-2">
+          <Button
+            variant="expandIcon"
+            Icon={ArrowRightIcon}
+            iconPlacement="right"
+            className="bg-rose-500 hover:bg-rose-500 w-full"
+          >
+            Online Course
+          </Button>
+          <Button  className="w-full">Research</Button>
+        </div>
       </SheetContent>
     </Sheet>
   );
