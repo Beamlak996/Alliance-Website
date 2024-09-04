@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { ArrowRightIcon, Menu } from "lucide-react";
+import { ArrowRightIcon } from "lucide-react";
 import { NavMenu } from "./nav-menu";
 import { MobileSidebarMenu } from "./mobile-sidebar-menu";
 

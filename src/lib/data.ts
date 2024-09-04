@@ -148,3 +148,65 @@ export const faqs = [
   },
   // Add more FAQs as needed
 ];
+export const sampleTestimonials = [
+  {
+    quote:
+      "The course was well-structured and the instructors were highly knowledgeable. I gained valuable skills that have greatly helped my career.",
+    name: "Abebe Tesfaye",
+    title: "Computer Science Graduate",
+  },
+  {
+    quote:
+      "I had an amazing experience with the program. The hands-on projects and real-world applications were extremely beneficial.",
+    name: "Mulugeta Bekele",
+    title: "Engineering Student",
+  },
+  {
+    quote:
+      "The learning environment was fantastic, and the support from the faculty was top-notch. I feel well-prepared for my future endeavors.",
+    name: "Hirut Alemayehu",
+    title: "Business Administration Graduate",
+  },
+  {
+    quote:
+      "I highly recommend this program to anyone looking to advance their career. The resources and networking opportunities were exceptional.",
+    name: "Solomon Girma",
+    title: "Education Specialist",
+  },
+  {
+    quote:
+      "The program exceeded my expectations in every way. The practical knowledge and skills I acquired are invaluable.",
+    name: "Tsedey Woldemariam",
+    title: "Marketing Major",
+  },
+  {
+    quote:
+      "I enjoyed every moment of the course. The instructors were very supportive, and the curriculum was comprehensive and engaging.",
+    name: "Kebede Demissie",
+    title: "Financial Analysis Student",
+  },
+  {
+    quote:
+      "This program provided me with the tools and knowledge I needed to succeed. The projects were challenging and rewarding.",
+    name: "Martha Gashaw",
+    title: "Public Relations Major",
+  },
+  {
+    quote:
+      "A transformative experience that has opened up new career opportunities for me. The quality of education was outstanding.",
+    name: "Tesfaye Asefa",
+    title: "Engineering Alumni",
+  },
+  {
+    quote:
+      "An excellent program with a perfect balance of theory and practice. The skills I gained have been directly applicable to my job.",
+    name: "Azeb Wondimu",
+    title: "Web Development Graduate",
+  },
+  {
+    quote:
+      "I am incredibly satisfied with the program. The instructors were knowledgeable, and the content was highly relevant to my field.",
+    name: "Samuel Zewdu",
+    title: "Graphic Design Graduate",
+  },
+];
