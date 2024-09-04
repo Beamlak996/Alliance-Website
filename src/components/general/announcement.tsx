@@ -3,7 +3,7 @@ import { PhoneCall, Send } from "lucide-react";
 
 export const Announcement = () => {
     return (
-      <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white py-2 px-4">
+      <div className="bg-gradient-to-r from-red-500 to-gray-500 text-white py-2 px-4">
         <div className="flex items-center gap-2 justify-between">
           <div className="flex items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
