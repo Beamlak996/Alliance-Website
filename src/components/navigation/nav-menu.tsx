@@ -18,6 +18,13 @@ export const NavMenu = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
+            <Link to="/">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Home
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <NavigationMenuTrigger>About Alliance</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">

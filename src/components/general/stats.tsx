@@ -71,7 +71,7 @@ export const Stats: React.FC = () => {
         </p>
       </div>
 
-      <dl className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:grid-cols-3 lg:grid-cols-3">
+      <dl className="mt-6 grid grid-cols-1 gap-4 sm:mt-8 sm:grid-cols-4 lg:grid-cols-4">
         <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
           <dt className="order-last text-lg font-medium text-gray-500">
             Students Enrolled
@@ -88,7 +88,17 @@ export const Stats: React.FC = () => {
           </dt>
 
           <dd className="text-4xl font-extrabold text-rose-500 md:text-5xl">
-            <Counter from={0} to={5} duration={2} />
+            <Counter from={0} to={30} duration={2} />
+          </dd>
+        </div>
+
+        <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
+          <dt className="order-last text-lg font-medium text-gray-500">
+            Trusted Tutors
+          </dt>
+
+          <dd className="text-4xl font-extrabold text-rose-500 md:text-5xl">
+            <Counter from={0} to={20} duration={2} />
           </dd>
         </div>
 
