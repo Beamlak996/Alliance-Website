@@ -1,11 +1,13 @@
 import { Hero } from "@/components/general/hero";
+import { ProgramsSection } from "@/components/general/program-section";
 import { Stats } from "@/components/general/stats";
 
 export const HomePage = () => {
-    return (
-      <div className="min-h-screen bg-stone-100">
-        <Hero />
-        <Stats />
-      </div>
-    );
-} 
+  return (
+    <div className="min-h-screen ">
+      <Hero />
+      <Stats />
+      <ProgramsSection />
+    </div>
+  );
+};

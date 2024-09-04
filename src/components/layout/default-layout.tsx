@@ -8,8 +8,8 @@ export const DefaultLayout = () => {
       <div className="min-h-screen">
         <Announcement />
         <Navbar />
-        <main>
-            <Outlet />
+        <main className="bg-stone-100">
+          <Outlet />
         </main>
         <Footer />
       </div>
