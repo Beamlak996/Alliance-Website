@@ -67,3 +67,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Infinite scrolling animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll {
+  animation: var(--animation-direction) var(--animation-duration) linear infinite;
+}

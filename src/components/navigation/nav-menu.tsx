@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { aboutAlliance, academics, admissions, lifeInAlliance } from "@/lib/nav-data";
+import { aboutAlliance, academics, admissions, lifeInAlliance } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom"
 

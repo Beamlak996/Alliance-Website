@@ -102,3 +102,30 @@ export const lifeInAlliance: {
 ];
 
 
+export const programs = [
+  {
+    type: "Technical and Vocational Education and Trainings (TVET)",
+    courses: [
+      { name: "Accounting", lectures: 45, icon: "📊" },
+      { name: "Management", lectures: 50, icon: "📋" },
+      { name: "Human Resource Management", lectures: 40, icon: "👥" },
+    ],
+  },
+  {
+    type: "Undergraduate Programs",
+    courses: [
+      { name: "Information Technology", lectures: 60, icon: "💻" },
+      { name: "Management", lectures: 50, icon: "📋" },
+      { name: "Accounting and Finance", lectures: 55, icon: "💰" },
+      { name: "Networking and Cybersecurity", lectures: 65, icon: "🔒" },
+      { name: "Software Development", lectures: 70, icon: "🖥️" },
+    ],
+  },
+  {
+    type: "Postgraduate Programs",
+    courses: [
+      { name: "Masters of Business Administration", lectures: 45, icon: "🏢" },
+      { name: "Master of Accounting and Finance", lectures: 50, icon: "📈" },
+    ],
+  },
+];
