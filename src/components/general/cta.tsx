@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
+import { ImagesSlider } from "./image-slider";
+import { motion } from "framer-motion";
+import { TextGenerateEffect } from "./text-generator-effect";
 
 export const Cta = () => {
+
   return (
     <BackgroundBeamsWithCollision>
-      <section className="overflow-hidden  sm:grid sm:grid-cols-2">
+      <section className="overflow-hidden sm:grid sm:grid-cols-2">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold text-rose-500 md:text-3xl animate-bounce">
@@ -28,11 +32,43 @@ export const Cta = () => {
           </div>
         </div>
 
-        <img
-          alt="Alliance College Campus"
-          src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          className="h-56 w-full object-cover sm:h-full rounded-l-xl"
-        />
+        <ImagesSlider
+          className="h-full rounded-l-2xl"
+          images={[
+            "/alliance-rwanda.jpg",
+            "/alliance-ceo.jpg",
+            "/alliance-sultan.jpg",
+          ]}
+        >
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -80,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.6,
+            }}
+            className="z-50 flex flex-col justify-center items-center"
+          >
+            <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+              
+              <span className="block text-2xl md:text-4xl mt-2">
+                Empower Your Future with Us
+              </span>
+              <TextGenerateEffect words="Seize the Opportunity for Excellence and Innovation." />
+            </motion.p>
+            <button className="px-4 py-2 backdrop-blur-sm border bg-rose-300/10 border-rose-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+              <Link to="/contact">
+                <span>Get Started →</span>
+              </Link>
+              <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-rose-500 to-transparent" />
+            </button>
+          </motion.div>
+        </ImagesSlider>
       </section>
     </BackgroundBeamsWithCollision>
   );
