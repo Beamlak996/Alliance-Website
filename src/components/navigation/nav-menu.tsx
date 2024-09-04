@@ -12,12 +12,16 @@ import { aboutAlliance, academics, admissions, lifeInAlliance } from "@/lib/data
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom"
 
-export const NavMenu = () => {
+type Props = {
+  isMobile?: boolean
+}
+
+export const NavMenu = ({isMobile = false}: Props) => {
   return (
     <div>
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
+          <NavigationMenuItem className={cn(isMobile && "flex flex-col gap-4")} >
             <Link to="/">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Home

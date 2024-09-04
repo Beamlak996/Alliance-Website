@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 export const Announcement = () => {
   return (
     <div className="bg-gradient-to-r from-red-500 to-gray-500 text-white py-2 px-4">
-      <div className="flex items-center gap-2 justify-between">
-        <div className="flex items-center gap-4 text-sm">
+      <div className="flex items-center gap-2 justify-between flex-wrap">
+        <div className="flex items-center gap-4 text-sm flex-wrap">
           <div className="flex items-center gap-2">
             <PhoneCall className="size-4" />
             <p>+251 912 156 110</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="items-center gap-2 hidden md:flex">
             <Send className="size-4" />
             <p className="hover:underline transition hover:cursor-pointer">
               info@alliance.com
@@ -21,7 +21,7 @@ export const Announcement = () => {
         <p className="text-sm text-center mx-auto">
           👋 Welcome, to <span className="font-bold">Alliance College.</span>{" "}
         </p>
-        <Link to={"/contact"}>
+        <Link to={"/contact"} className="hidden md:inline">
           <Button variant="ghost" className="rounded-3xl">
             Contact Us
           </Button>

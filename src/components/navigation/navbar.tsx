@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { ArrowRightIcon } from "lucide-react"
+import { ArrowRightIcon, Menu } from "lucide-react";
 import { NavMenu } from "./nav-menu";
-
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -37,10 +37,12 @@ export const Navbar = () => {
             alt="Alliance College"
             className="size-12"
           />
-          <p className="font-bold">Alliance College</p>
+          <p className="font-bold hidden sm:block">Alliance College</p>
         </div>
-        <NavMenu />
-        <div className="flex items-center gap-2">
+
+        {/* Desktop view */}
+        <div className="hidden md:flex items-center gap-4">
+          <NavMenu />
           <Button
             variant="expandIcon"
             Icon={ArrowRightIcon}
@@ -51,8 +53,38 @@ export const Navbar = () => {
           </Button>
           <Button variant="secondary">Research</Button>
         </div>
+
+        {/* Mobile view */}
+        <div className="md:hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Menu className="h-6 w-6" />
+          </Button>
+        </div>
       </nav>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white p-4 shadow-md">
+          <NavMenu isMobile={true} />
+          <div className="mt-4 space-y-2">
+            <Button
+              variant="expandIcon"
+              Icon={ArrowRightIcon}
+              iconPlacement="right"
+              className="bg-rose-500 hover:bg-rose-500 w-full"
+            >
+              Online Course
+            </Button>
+            <Button variant="secondary" className="w-full">
+              Research
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
-
