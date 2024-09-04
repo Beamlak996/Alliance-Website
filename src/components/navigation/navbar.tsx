@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { ArrowRightIcon, Menu } from "lucide-react";
 import { NavMenu } from "./nav-menu";
+import { MobileSidebarMenu } from "./mobile-sidebar-menu";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -56,35 +56,9 @@ export const Navbar = () => {
 
         {/* Mobile view */}
         <div className="md:hidden">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <Menu className="h-6 w-6" />
-          </Button>
+          <MobileSidebarMenu />
         </div>
       </nav>
-
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white p-4 shadow-md">
-          <NavMenu isMobile={true} />
-          <div className="mt-4 space-y-2">
-            <Button
-              variant="expandIcon"
-              Icon={ArrowRightIcon}
-              iconPlacement="right"
-              className="bg-rose-500 hover:bg-rose-500 w-full"
-            >
-              Online Course
-            </Button>
-            <Button variant="secondary" className="w-full">
-              Research
-            </Button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
