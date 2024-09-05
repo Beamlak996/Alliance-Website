@@ -10,12 +10,12 @@ export const aboutAlliance: {
   },
   {
     title: "Mission and Vision",
-    href: "#",
+    href: "/mission-and-visions",
     description: "Learn about our purpose and aspirations for the future.",
   },
   {
     title: "Core Values",
-    href: "#",
+    href: "/core-values",
     description:
       "Understand the principles that guide our actions and decisions.",
   },
@@ -232,5 +232,33 @@ export const stories = [
       "/alliance-rwanda-2.jpg",
       "/alliance-rwanda-3.jpg",
     ],
+  },
+];
+
+export const values = [
+  {
+    title: "Integrity",
+    description:
+      "We uphold the highest standards of integrity in all of our actions, fostering a community of trust and responsibility.",
+  },
+  {
+    title: "Excellence",
+    description:
+      "We strive for excellence in everything we do, continuously improving and innovating to achieve the best outcomes for our students and community.",
+  },
+  {
+    title: "Innovation",
+    description:
+      "We embrace change and foster creativity, encouraging students to think outside the box and solve real-world problems through innovative solutions.",
+  },
+  {
+    title: "Diversity & Inclusion",
+    description:
+      "We celebrate diversity and are committed to creating an inclusive environment where everyone feels respected and valued.",
+  },
+  {
+    title: "Leadership",
+    description:
+      "We nurture future leaders by developing critical thinking, empathy, and a sense of responsibility towards society.",
   },
 ];

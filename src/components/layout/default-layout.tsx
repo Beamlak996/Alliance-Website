@@ -4,14 +4,14 @@ import { Navbar } from "../navigation/navbar";
 import { Outlet } from "react-router-dom";
 
 export const DefaultLayout = () => {
-    return (
-      <div className="min-h-screen">
-        <Announcement />
-        <Navbar />
-        <main className="bg-stone-100">
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
-    );
-}
+  return (
+    <div className="min-h-screen">
+      <Announcement />
+      <Navbar />
+      <main className="bg-gradient-to-r from-rose-50 to-gray-100 min-h-screen">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
+};
