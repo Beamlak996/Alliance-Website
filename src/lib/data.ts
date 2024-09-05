@@ -5,7 +5,7 @@ export const aboutAlliance: {
 }[] = [
   {
     title: "Our Stories",
-    href: "#",
+    href: "/our-stories",
     description: "Discover the experiences and achievements of our community.",
   },
   {
@@ -68,12 +68,12 @@ export const admissions: {
 }[] = [
   {
     title: "Apply Now",
-    href: "#",
+    href: "/contact",
     description: "Start your journey with us by submitting your application.",
   },
   {
     title: "Visit Campus",
-    href: "#",
+    href: "/visit-campus",
     description: "Experience our campus and meet our community in person.",
   },
 ];
@@ -100,7 +100,6 @@ export const lifeInAlliance: {
     description: "Discover the clubs and events that enrich campus life.",
   },
 ];
-
 
 export const programs = [
   {
@@ -208,5 +207,30 @@ export const sampleTestimonials = [
       "I am incredibly satisfied with the program. The instructors were knowledgeable, and the content was highly relevant to my field.",
     name: "Samuel Zewdu",
     title: "Graphic Design Graduate",
+  },
+];
+
+export const stories = [
+  {
+    title: "Community Impact Through Planting",
+    description:
+      "At Alliance College, we take pride in our community-driven planting initiatives. Our students actively participate in reforestation efforts, contributing to environmental sustainability and shaping a greener future.",
+    images: ["/alliance-plant.jpg", "/alliance-plant-2.jpg"],
+  },
+  {
+    title: "Strengthening Ties with Law Enforcement",
+    description:
+      "In collaboration with the local police force, Alliance College has fostered a safe learning environment through strong partnerships, ensuring the safety and well-being of our students.",
+    images: ["/alliance-police.jpg", "/alliance-police-2.jpg"],
+  },
+  {
+    title: "Empowering Rwanda's Future",
+    description:
+      "Alliance College plays a vital role in empowering the youth of Rwanda, providing education that fosters leadership, innovation, and community development for the nation's brighter tomorrow.",
+    images: [
+      "/alliance-rwanda.jpg",
+      "/alliance-rwanda-2.jpg",
+      "/alliance-rwanda-3.jpg",
+    ],
   },
 ];
