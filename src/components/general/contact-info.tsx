@@ -2,7 +2,7 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export const ContactInfo = () => {
   return (
-    <div className="bg-rose-500 text-white p-8 w-full md:w-1/2 rounded-lg shadow-lg">
+    <div className="bg-rose-500 text-white w-full lg:w-1/2 p-4 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
       <div className="flex items-start mb-4">
         <FaMapMarkerAlt className="text-xl mr-3" />
