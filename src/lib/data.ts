@@ -53,12 +53,12 @@ export const academics: {
     description:
       "Gain practical skills through our technical and vocational education.",
   },
-  {
-    title: "Faculty and Staff",
-    href: "#",
-    description:
-      "Meet the dedicated professionals guiding our academic programs.",
-  },
+  // {
+  //   title: "Faculty and Staff",
+  //   href: "#",
+  //   description:
+  //     "Meet the dedicated professionals guiding our academic programs.",
+  // },
 ];
 
 export const admissions: {
@@ -83,12 +83,12 @@ export const lifeInAlliance: {
   href: string;
   description: string;
 }[] = [
-  {
-    title: "Blogs",
-    href: "#",
-    description:
-      "Read about the latest happenings and stories from our community.",
-  },
+  // {
+  //   title: "Blogs",
+  //   href: "#",
+  //   description:
+  //     "Read about the latest happenings and stories from our community.",
+  // },
   {
     title: "Student Organizations",
     href: "#",

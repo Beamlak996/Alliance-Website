@@ -12,6 +12,7 @@ import { OnlineLearningPage } from "./pages/online-learning-page";
 import { PostGradPrograms } from "./pages/post-grad-programs-page";
 import { TvetProgramsPage } from "./pages/tvet-programs-page";
 import { UnderGradProgramsPage } from "./pages/under-grad-programs-page";
+import { VisitCampusPage } from "./pages/visit-campus-page";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/post-grad-programs" element={<PostGradPrograms />} />
         <Route path="/tvet-programs" element={<TvetProgramsPage />} />
         <Route path="/under-grad-programs" element={<UnderGradProgramsPage />} />
+        <Route path="/visit-campus" element={<VisitCampusPage />} />
       </Route>
     </Routes>
   );
