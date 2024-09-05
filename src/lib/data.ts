@@ -31,11 +31,11 @@ export const academics: {
     href: "/online-learning",
     description: "Explore our flexible online education opportunities.",
   },
-  {
-    title: "Research",
-    href: "#",
-    description: "Learn about our groundbreaking research initiatives.",
-  },
+  // {
+  //   title: "Research",
+  //   href: "https://alliance-student-research.netlify.app",
+  //   description: "Learn about our groundbreaking research initiatives.",
+  // },
   {
     title: "Post Graduate Programs",
     href: "/post-grad-programs",
@@ -91,12 +91,12 @@ export const lifeInAlliance: {
   // },
   {
     title: "Student Organizations",
-    href: "#",
+    href: "/student-organizations",
     description: "Explore the various student groups and their activities.",
   },
   {
     title: "Clubs and Activities",
-    href: "#",
+    href: "/club-activites",
     description: "Discover the clubs and events that enrich campus life.",
   },
 ];
@@ -262,3 +262,5 @@ export const values = [
       "We nurture future leaders by developing critical thinking, empathy, and a sense of responsibility towards society.",
   },
 ];
+
+

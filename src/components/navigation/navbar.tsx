@@ -54,7 +54,11 @@ export const Navbar = () => {
               Online Course
             </Button>
           </Link>
-          <Button variant="secondary">Research</Button>
+          <Link to="https://alliance-student-research.netlify.app">
+            <Button variant="secondary">
+              Research
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile view */}

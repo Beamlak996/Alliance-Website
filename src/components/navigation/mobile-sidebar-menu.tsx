@@ -97,8 +97,9 @@ export const MobileSidebarMenu = () => {
               Online Course
             </Button>
           </Link>
-
-          <Button className="w-full">Research</Button>
+          <Link to="https://alliance-student-research.netlify.app">
+            <Button className="w-full">Research</Button>
+          </Link>
         </div>
       </SheetContent>
     </Sheet>
