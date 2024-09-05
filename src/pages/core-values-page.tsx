@@ -1,3 +1,4 @@
+import { BentoGrid, BentoGridItem } from "@/components/general/bento-grid";
 import { TypewriterEffectSmooth } from "@/components/general/type-writing-effect";
 import { values } from "@/lib/data";
 import { motion } from "framer-motion";
@@ -33,13 +34,13 @@ export const CoreValuesPage = () => {
 
   return (
     <div className="min-h-screen p-6 bg-gradient-to-r from-rose-50 to-gray-100">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 space-y-16">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         {/* Page Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl font-extrabold text-center text-rose-700 flex items-center justify-center"
+          className="text-4xl font-extrabold text-center text-rose-700 mb-8 flex items-center justify-center"
         >
           <TypewriterEffectSmooth
             words={words}
@@ -48,49 +49,23 @@ export const CoreValuesPage = () => {
           />
         </motion.h1>
 
-        {/* Core Values List */}
-        <div className="space-y-8">
+        {/* Bento Grid */}
+        <BentoGrid className="max-w-4xl mx-auto">
           {values.map((value, index) => {
-            const IconComponent = icons[index % icons.length]; // Cycle through icons
+            const IconComponent = icons[index % icons.length]; 
+            const isLarge = index % 4 === 0; 
 
             return (
-              <motion.div
+              <BentoGridItem
                 key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="bg-white shadow-lg rounded-2xl p-6 flex items-start space-x-4"
-              >
-                <motion.div
-                  className="text-rose-500"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <IconComponent className="text-3xl" />
-                </motion.div>
-                <div className="flex-1">
-                  <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="text-xl font-semibold text-rose-700"
-                  >
-                    {value.title}
-                  </motion.h2>
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-gray-700"
-                  >
-                    {value.description}
-                  </motion.p>
-                </div>
-              </motion.div>
+                title={value.title}
+                description={value.description}
+                icon={<IconComponent className="text-3xl text-rose-500" />}
+                className={isLarge ? "md:col-span-2 md:row-span-2" : ""}
+              />
             );
           })}
-        </div>
+        </BentoGrid>
       </div>
     </div>
   );
