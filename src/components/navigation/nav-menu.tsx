@@ -93,7 +93,7 @@ export const NavMenu = ({isMobile = false}: Props) => {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link to="#">
+            <Link to="/news">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 News
               </NavigationMenuLink>

@@ -15,6 +15,7 @@ import { UnderGradProgramsPage } from "./pages/under-grad-programs-page";
 import { VisitCampusPage } from "./pages/visit-campus-page";
 import { StudentOrganizationsPage } from "./pages/student-organizations-page";
 import { ClubAndActivitiesPage } from "./pages/club-activites-page";
+import { NewsPage } from "./pages/news-page";
 
 function App() {
   return (
@@ -43,6 +44,10 @@ function App() {
         <Route
           path="/club-activites"
           element={<ClubAndActivitiesPage />}
+        />
+        <Route
+          path="/news"
+          element={<NewsPage />}
         />
       </Route>
     </Routes>
