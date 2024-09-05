@@ -28,7 +28,7 @@ export const academics: {
 }[] = [
   {
     title: "Online Learning",
-    href: "#",
+    href: "/online-learning",
     description: "Explore our flexible online education opportunities.",
   },
   {

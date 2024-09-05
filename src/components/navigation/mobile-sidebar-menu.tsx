@@ -87,14 +87,17 @@ export const MobileSidebarMenu = () => {
           ))}
         </nav>
         <div className="flex flex-col w-full items-center my-2 gap-2">
-          <Button
-            variant="expandIcon"
-            Icon={ArrowRightIcon}
-            iconPlacement="right"
-            className="bg-rose-500 hover:bg-rose-500 w-full"
-          >
-            Online Course
-          </Button>
+          <Link to="/online-learning">
+            <Button
+              variant="expandIcon"
+              Icon={ArrowRightIcon}
+              iconPlacement="right"
+              className="bg-rose-500 hover:bg-rose-500 w-full"
+            >
+              Online Course
+            </Button>
+          </Link>
+
           <Button className="w-full">Research</Button>
         </div>
       </SheetContent>

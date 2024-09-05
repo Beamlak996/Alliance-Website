@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import { NavMenu } from "./nav-menu";
 import { MobileSidebarMenu } from "./mobile-sidebar-menu";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,14 +44,16 @@ export const Navbar = () => {
         {/* Desktop view */}
         <div className="hidden md:flex items-center gap-4">
           <NavMenu />
-          <Button
-            variant="expandIcon"
-            Icon={ArrowRightIcon}
-            iconPlacement="right"
-            className="bg-rose-500 hover:bg-rose-500"
-          >
-            Online Course
-          </Button>
+          <Link to="/online-learning">
+            <Button
+              variant="expandIcon"
+              Icon={ArrowRightIcon}
+              iconPlacement="right"
+              className="bg-rose-500 hover:bg-rose-500"
+            >
+              Online Course
+            </Button>
+          </Link>
           <Button variant="secondary">Research</Button>
         </div>
 

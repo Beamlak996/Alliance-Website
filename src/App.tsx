@@ -8,6 +8,7 @@ import { ContactPage } from "./pages/contact-page";
 import { OurStoriesPage } from "./pages/out-stories-page";
 import { MissionAndVisionsPage } from "./pages/mission-and-visions-page";
 import { CoreValuesPage } from "./pages/core-values-page";
+import { OnlineLearningPage } from "./pages/online-learning-page";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           element={<MissionAndVisionsPage />}
         />
         <Route path="/core-values" element={<CoreValuesPage />} />
+        <Route path="/online-learning" element={<OnlineLearningPage />} />
       </Route>
     </Routes>
   );
