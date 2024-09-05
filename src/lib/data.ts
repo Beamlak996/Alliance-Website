@@ -38,18 +38,18 @@ export const academics: {
   },
   {
     title: "Post Graduate Programs",
-    href: "#",
+    href: "/post-grad-programs",
     description:
       "Advance your education with our specialized graduate programs.",
   },
   {
     title: "Under Graduate Programs",
-    href: "#",
+    href: "/under-grad-programs",
     description: "Discover our diverse undergraduate degree offerings.",
   },
   {
     title: "TVET Programs",
-    href: "#",
+    href: "/tvet-programs",
     description:
       "Gain practical skills through our technical and vocational education.",
   },

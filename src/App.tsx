@@ -9,6 +9,9 @@ import { OurStoriesPage } from "./pages/out-stories-page";
 import { MissionAndVisionsPage } from "./pages/mission-and-visions-page";
 import { CoreValuesPage } from "./pages/core-values-page";
 import { OnlineLearningPage } from "./pages/online-learning-page";
+import { PostGradPrograms } from "./pages/post-grad-programs-page";
+import { TvetProgramsPage } from "./pages/tvet-programs-page";
+import { UnderGradProgramsPage } from "./pages/under-grad-programs-page";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         />
         <Route path="/core-values" element={<CoreValuesPage />} />
         <Route path="/online-learning" element={<OnlineLearningPage />} />
+        <Route path="/post-grad-programs" element={<PostGradPrograms />} />
+        <Route path="/tvet-programs" element={<TvetProgramsPage />} />
+        <Route path="/under-grad-programs" element={<UnderGradProgramsPage />} />
       </Route>
     </Routes>
   );
