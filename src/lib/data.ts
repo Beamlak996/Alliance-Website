@@ -9,6 +9,12 @@ export const aboutAlliance: {
     description: "Discover the experiences and achievements of our community.",
   },
   {
+    title: "Who We Are",
+    href: "/who-we-are",
+    description:
+      "Explore our journey, values, and the impact we've made together.",
+  },
+  {
     title: "Mission and Vision",
     href: "/mission-and-visions",
     description: "Learn about our purpose and aspirations for the future.",
@@ -223,16 +229,6 @@ export const stories = [
       "In collaboration with the local police force, Alliance College has fostered a safe learning environment through strong partnerships, ensuring the safety and well-being of our students.",
     images: ["/alliance-police.jpg", "/alliance-police-2.jpg"],
   },
-  {
-    title: "Empowering Rwanda's Future",
-    description:
-      "Alliance College plays a vital role in empowering the youth of Rwanda, providing education that fosters leadership, innovation, and community development for the nation's brighter tomorrow.",
-    images: [
-      "/alliance-rwanda.jpg",
-      "/alliance-rwanda-2.jpg",
-      "/alliance-rwanda-3.jpg",
-    ],
-  },
 ];
 
 export const values = [
@@ -262,5 +258,3 @@ export const values = [
       "We nurture future leaders by developing critical thinking, empathy, and a sense of responsibility towards society.",
   },
 ];
-
-

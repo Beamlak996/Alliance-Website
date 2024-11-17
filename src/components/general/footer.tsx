@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
 
           <div className="flex flex-wrap justify-center mb-6 space-x-4">
             <Link
-              to="https://www.facebook.com/alliancecollege"
+              to="https://www.facebook.com/profile.php?id=100054206423912"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
               </motion.div>
             </Link>
             <Link
-              to="https://www.linkedin.com/company/alliancecollege"
+              to="https://www.linkedin.com/company/alliance-college-arba-minch/"
               target="_blank"
               rel="noopener noreferrer"
             >

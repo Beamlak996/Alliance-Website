@@ -16,6 +16,7 @@ import { VisitCampusPage } from "./pages/visit-campus-page";
 import { StudentOrganizationsPage } from "./pages/student-organizations-page";
 import { ClubAndActivitiesPage } from "./pages/club-activites-page";
 import { NewsPage } from "./pages/news-page";
+import { WhoWeArePage } from "./pages/who-we-are-page";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/our-stories" element={<OurStoriesPage />} />
+        <Route path="/who-we-are" element={<WhoWeArePage />} />
         <Route
           path="/mission-and-visions"
           element={<MissionAndVisionsPage />}
@@ -41,14 +43,8 @@ function App() {
           path="/student-organizations"
           element={<StudentOrganizationsPage />}
         />
-        <Route
-          path="/club-activites"
-          element={<ClubAndActivitiesPage />}
-        />
-        <Route
-          path="/news"
-          element={<NewsPage />}
-        />
+        <Route path="/club-activites" element={<ClubAndActivitiesPage />} />
+        <Route path="/news" element={<NewsPage />} />
       </Route>
     </Routes>
   );

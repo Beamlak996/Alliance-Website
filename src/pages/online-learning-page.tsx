@@ -5,6 +5,7 @@ import {
   FaBook,
   FaGraduationCap,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const OnlineLearningPage = () => {
   const sectionVariants = {
@@ -144,7 +145,13 @@ export const OnlineLearningPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Coming soon...
+            <Link
+              to="https://alliance-elearning-client.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click Here
+            </Link>
           </motion.a>
         </motion.section>
       </div>
