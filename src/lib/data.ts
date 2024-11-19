@@ -229,6 +229,16 @@ export const stories = [
       "In collaboration with the local police force, Alliance College has fostered a safe learning environment through strong partnerships, ensuring the safety and well-being of our students.",
     images: ["/alliance-police.jpg", "/alliance-police-2.jpg"],
   },
+  {
+    title: "Empowering Ethiopia's Future",
+    description:
+      "Alliance College plays a vital role in empowering Rural youth by providing education that fosters leadership, innovation, and community development for the nation's brighter tomorrow.",
+    images: [
+      "/alliance-rwanda.jpg",
+      "/alliance-rwanda-2.jpg",
+      "/alliance-rwanda-3.jpg",
+    ],
+  },
 ];
 
 export const values = [

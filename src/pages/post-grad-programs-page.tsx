@@ -106,7 +106,7 @@ export const PostGradPrograms = () => {
             Explore our postgraduate programs and take the next step towards
             achieving your professional goals.
           </motion.p>
-          <Link to="/contact">
+          {/* <Link to="/contact">
             <motion.a
               className="mt-6 inline-block px-6 py-3 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition"
               initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export const PostGradPrograms = () => {
             >
               Learn More
             </motion.a>
-          </Link>
+          </Link> */}
         </motion.section>
       </div>
     </div>

@@ -105,7 +105,7 @@ export const TvetProgramsPage = () => {
             Explore our TVET programs and take the first step towards a
             successful career with practical training and skills.
           </motion.p>
-          <motion.a
+          {/* <motion.a
             href="#"
             className="mt-6 inline-block px-6 py-3 bg-rose-600 text-white rounded-lg hover:bg-rose-700 transition"
             initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ export const TvetProgramsPage = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             Learn More
-          </motion.a>
+          </motion.a> */}
         </motion.section>
       </div>
     </div>
