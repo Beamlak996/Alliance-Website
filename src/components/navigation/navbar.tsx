@@ -1,10 +1,11 @@
-import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
-import { Button } from "../ui/button";
+import { useState, useEffect } from "react";
 import { ArrowRightIcon } from "lucide-react";
-import { NavMenu } from "./nav-menu";
-import { MobileSidebarMenu } from "./mobile-sidebar-menu";
 import { Link } from "react-router-dom";
+
+import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
+
+import { NavMenu } from "../navigation/nav-menu";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,39 +32,34 @@ export const Navbar = () => {
         isScrolled ? "shadow-md" : "shadow-sm"
       )}
     >
-      <nav className="container mx-auto p-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
+      <nav className="container mx-auto p-4 flex items-center justify-center relative">
+        {/* Logo */}
+        <div className="absolute left-4 flex items-center gap-2">
           <img
-            src="/alliance-logo.jpg"
-            alt="Alliance College"
-            className="size-12"
+            src="/alem-hosptial-logo.jpg"
+            alt="Alem Primary Hospital Logo"
+            className="w-12 h-12 rounded-full"
           />
-          <p className="font-bold hidden sm:block">Alliance College</p>
+          <p className="font-bold hidden sm:block">Alem Primary Hospital</p>
         </div>
 
-        {/* Desktop view */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* Centered Navigation Menu */}
+        <div className="flex items-center gap-8 mr-6">
           <NavMenu />
-          <Link to="/online-learning">
+        </div>
+
+        {/* Contact Us Button */}
+        <div className="absolute right-4">
+          <Link to="/contact-us">
             <Button
               variant="expandIcon"
               Icon={ArrowRightIcon}
               iconPlacement="right"
-              className="bg-rose-500 hover:bg-rose-500"
+              className="bg-sky-500 hover:bg-sky-600"
             >
-              Online Course
+              Contact Us
             </Button>
           </Link>
-          <Link to="https://alliance-student-research.netlify.app">
-            <Button variant="secondary">
-              Research
-            </Button>
-          </Link>
-        </div>
-
-        {/* Mobile view */}
-        <div className="md:hidden">
-          <MobileSidebarMenu />
         </div>
       </nav>
     </div>

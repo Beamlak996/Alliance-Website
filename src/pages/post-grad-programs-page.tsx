@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FaBusinessTime, FaCalculator } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export const PostGradPrograms = () => {
   const sectionVariants = {
