@@ -55,7 +55,7 @@ export const Navbar = () => {
               variant="expandIcon"
               Icon={ArrowRightIcon}
               iconPlacement="right"
-              className="bg-sky-500 hover:bg-sky-600"
+              className="bg-rose-500 hover:bg-rose-600"
             >
               Contact Us
             </Button>
